@@ -20,7 +20,9 @@ import pandas as pd
 #print(my_series)
 
 #05 DataFrames
-data = [["Toyota", "Corolla", "Blue"], ["Ford", "K", "Yellow"], ["Porsche", "Cayenne", "White"]]
-df = pd.DataFrame(data, columns=['Brand', 'Model', 'Color'])
+#data = [["Toyota", "Corolla", "Blue"], ["Ford", "K", "Yellow"], ["Porsche", "Cayenne", "White"]]
+#df = pd.DataFrame(data, columns=['Brand', 'Model', 'Color'])
 # Print the DataFrame
-print(df)
+#print(df)
+
+#05.1 DataFrame Dict
