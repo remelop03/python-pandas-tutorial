@@ -56,6 +56,23 @@
 # print(df)
 
 # 05.2 DataFrame iLoc
-import pandas as pd
-data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
-print(data_frame.iloc[133, 6])
+# import pandas as pd
+# data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+# print(data_frame.iloc[133, 6])
+
+# 05.3 DataFrame Head
+# import pandas as pd
+# data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+# print(data_frame.head(3))
+
+# 05.4 DataFrame Tail
+# import pandas as pd
+# data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+# print(data_frame.tail(3))
+
+# 05.5 Print Columns
+# import pandas as pd
+# data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+# print(data_frame[['Name', 'Type 1']][0:10])
+
+
