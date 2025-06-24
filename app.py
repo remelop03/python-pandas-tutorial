@@ -75,4 +75,36 @@
 # data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
 # print(data_frame[['Name', 'Type 1']][0:10])
 
+# 05.6 Loc Function
+# import pandas as pd
+# data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+# print(data_frame.loc[data_frame['Attack']>80])
 
+# 05.7 Filter and Count
+# import pandas as pd
+# data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+# print(len(data_frame.loc[data_frame['Legendary'] == True]))
+
+# 06 Clean Datasets
+# import pandas as pd
+# data = pd.read_csv('.learn/assets/us_baby_names_right.csv')
+# print(data.head())
+
+# 06.1 Remove Column
+# import pandas as pd
+# data = pd.read_csv('.learn/assets/us_baby_names_right.csv')
+# data = data.drop(columns=['Unnamed: 0'])
+# print(data.head())
+
+# 06.2 Value Counts
+# import pandas as pd
+# data = pd.read_csv('.learn/assets/us_baby_names_right.csv')
+# gender = data['Gender'].value_counts()
+# print(gender)
+
+# 06.3 Group By
+import pandas as pd
+data = pd.read_csv('.learn/assets/us_baby_names_right.csv')
+print(len(data.groupby(['Name']).sum()))
+name = data['Name'].value_counts()
+print(len(name))
