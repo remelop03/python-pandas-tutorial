@@ -18,3 +18,44 @@
 # print(series)
 
 # 04.2 Series Apply
+# import pandas as pd
+# list  = [2, 4, 6, 8, 10]
+# my_series = pd.Series(list)
+# print(my_series.apply(lambda x : x/2))
+
+# 05 DataFrames
+# import pandas as pd
+# data = [["Toyota", "Corolla", "Blue"], ["Ford", "K", "Yellow"], ["Porsche", "Cayenne", "White"]]
+# df   = pd.DataFrame(data, columns = ['Brand', 'Model', 'Color'])
+# print(df)
+
+# 05.1 DataFrame Dict
+# import pandas as pd
+# data = [
+#    { 
+#        "brand": "Toyota", 
+#        "model": "Corolla",
+#        "color": "Blue"
+#    },
+#    {
+#        "brand": "Ford", 
+#        "model": "K",
+#        "color": "Yellow"
+#    },
+#    {
+#        "brand": "Porsche", 
+#        "model": "Cayenne",
+#        "color": "White"
+#    }
+#]
+
+# df = pd.DataFrame(data)
+
+# new_car = { "brand": "Tesla", "model": "Model S", "color": "Red" }
+# df.loc[len(df)] = new_car
+# print(df)
+
+# 05.2 DataFrame iLoc
+import pandas as pd
+data_frame = pd.read_csv('.learn/assets/pokemon_data.csv')
+print(data_frame.iloc[133, 6])
